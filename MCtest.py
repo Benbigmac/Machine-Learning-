@@ -1,6 +1,6 @@
 from sklearn import tree # creates training data in lines below
-features = [[140,1],[130,1],[150,0],[170,0]] # 0 for bumpy 1 for smooth
-labels = ["apple","apple","orange","orange"] # 0 for apple, 1 for orange 
+features = [[4,3],[5,4],[9,8],[7,9]] # Happiness 0-10, hours of sleep
+labels = ["Computer Science Major","Computer Science Major","LAS Major","LAS Major"] 
 clf= tree.DecisionTreeClassifier()
 clf=clf.fit(features, labels) #trains classifier
-print clf.predict([[160,0]])
+print clf.predict([[2,2]])
